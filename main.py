@@ -1,18 +1,56 @@
 import tkinter as tk
-
-class mycalculator:
+class MyCalculator:
     def __init__(self):
-
         self.root = tk.Tk()
+        self.root.geometry("550x650")
+        self.root.title("Calculator Pro X +++")
 
-        self.root.geometry("300x300")
-        self.root.title("My Calulator")
+        self.label = tk.Label(self.root, text="Calculator Pro X +++", font=('Comic Sans MS', 40))
+        self.label.pack()
+        self.button = tk.Button(self.root, text="CE", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=85, y=150)
+        self.button = tk.Button(self.root, text="()", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=185, y=150)
+        self.button = tk.Button(self.root, text="%", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=285, y=150)
+        self.button = tk.Button(self.root, text="/", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=385, y=150)
+        self.button = tk.Button(self.root, text="x", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=385, y=240)
+        self.button = tk.Button(self.root, text="-", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=385, y=340)
+        self.button = tk.Button(self.root, text="+", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=385, y=440)
+        self.button = tk.Button(self.root, text="7", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=85, y=240)
+        self.button = tk.Button(self.root, text="8", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=185, y=240)
+        self.button = tk.Button(self.root, text="9", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=285, y=240)
+        self.button = tk.Button(self.root, text="4", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=85, y=340)
+        self.button = tk.Button(self.root, text="5", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=185, y=340)
+        self.button = tk.Button(self.root, text="6", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=285, y=340)
+        self.button = tk.Button(self.root, text="1", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=85, y=440)
+        self.button = tk.Button(self.root, text="2", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=185, y=440)
+        self.button = tk.Button(self.root, text="3", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=285, y=440)
+        self.button = tk.Button(self.root, text="+/-", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=85, y=540)
+        self.button = tk.Button(self.root, text="0", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=185, y=540)
+        self.button = tk.Button(self.root, text=".", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=285, y=540)
+        self.button = tk.Button(self.root, text="=", font=('Comic Sans MS', 25), width=3, height=1)
+        self.button.place(x=385, y=540)
+        self.label = tk.Label(self.root, text="", width=50, height=2).place(x=0, y=80) 
 
-        self.label = tk.Label(self.root, text="Hello DIP01", font=('Arial', 18)).pack()
-
-        self.buttom = tk.Button(self.root, text="Click here", height=4)
-        self.buttom.place(x=20, y=50)
 
         self.root.mainloop()
 
-mycalculator()        
+
+MyCalculator()
